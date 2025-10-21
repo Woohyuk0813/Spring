@@ -67,7 +67,7 @@
 
 7. 응답객체에 클라이언트에 전송할 데이터를 쓸 때 사용되는 클래스와 메서드는 무엇인가?
 
-답: PrintWriter, gerWriter
+답: PrintWriter, gerWriter()
 
 8. 클라이언트가 서버에 접속했을때 WAS 부여해 주는 2가지 객체는 ?
 
