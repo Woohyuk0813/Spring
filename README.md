@@ -5,38 +5,6 @@
     **요구사항**
 
 - `/hello`로 GET 요청 시 `안녕하세요, 서블릿!` 출력
-- 응답 Content-Type을 `text/html; charset=UTF-8`로 설정
-- 현재 시간도 함께 출력하세요
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
-@WebServlet("/hello")
-public class HelloServlet extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html; charset=UTF-8");
-
-        PrintWriter out = response.getWriter();
-
-        LocalDateTime now = LocalDateTime.now();
-        String timeStr = now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-
-        out.println("<!doctype html>");
-        out.println("<html><head><meta charset='UTF-8'><title>Hello</title></head><body>");
-        out.println("<h1>안녕하세요, 서블릿!</h1>");
-        out.println("<p>현재 시간: " + timeStr + "</p>");
-        out.println("</body></html>");
-        out.close();
-    }
-}
 
 ## 2) GET 파라미터 처리 & 검증
 
