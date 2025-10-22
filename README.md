@@ -5,6 +5,13 @@
     **요구사항**
 
 - `/hello`로 GET 요청 시 `안녕하세요, 서블릿!` 출력
+-  응답 Content-Type을 `text/html; charset=UTF-8`로 설정
+- 현재 시간도 함께 출력하세요
+
+- <img width="791" height="682" alt="image" src="https://github.com/user-attachments/assets/36e3280d-540a-45b8-b8b8-6f9c6c4f2b34" />
+
+
+- 
 
 ## 2) GET 파라미터 처리 & 검증
 
