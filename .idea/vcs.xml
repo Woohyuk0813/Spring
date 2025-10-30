@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Servlet_mvc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TodoService" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/memberService" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springEx" vcs="Git" />
+  </component>
+</project>
