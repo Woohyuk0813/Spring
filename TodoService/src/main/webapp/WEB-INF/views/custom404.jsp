@@ -1,7 +1,7 @@
 <%--
   Created by IntelliJ IDEA.
-  User: woohyuk
-  Date: 25. 10. 29.
+  User: a
+  Date: 2025-10-29
   Time: 오전 11:15
   To change this template use File | Settings | File Templates.
 --%>
@@ -11,6 +11,6 @@
     <title>Custom Not_Found Page</title>
 </head>
 <body>
-  Opps! 페이지를 찾을 수가 없네요
+Opps! 페이지를 찾을 수가 없네요
 </body>
 </html>
