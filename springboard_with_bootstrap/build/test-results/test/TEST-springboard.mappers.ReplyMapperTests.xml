@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="springboard.mappers.ReplyMapperTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-11-04T01:10:51" hostname="Woohyukui-MacBookAir.local" time="0.056">
+  <properties/>
+  <testcase name="testDelete()" classname="springboard.mappers.ReplyMapperTests" time="0.056"/>
+  <system-out><![CDATA[Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1ad777f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5bbbdd4b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@438bad7c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25230246, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4fdf8f12, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4a8b5227, org.springframework.test.context.event.EventPublishingTestExecutionListener@54f5f647]
+Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@42110406
+HikariPool-1 - configuration:
+allowPoolSuspension.............false
+autoCommit......................true
+catalog.........................none
+connectionInitSql...............none
+connectionTestQuery.............none
+connectionTimeout...............30000
+dataSource......................none
+dataSourceClassName.............none
+dataSourceJNDI..................none
+dataSourceProperties............{password=<masked>}
+driverClassName................."com.mysql.cj.jdbc.Driver"
+exceptionOverrideClassName......none
+healthCheckProperties...........{}
+healthCheckRegistry.............none
+idleTimeout.....................600000
+initializationFailTimeout.......1
+isolateInternalQueries..........false
+jdbcUrl.........................jdbc:mysql://localhost:3306/root?serverTimezone=Asia/Seoul
+keepaliveTime...................0
+leakDetectionThreshold..........0
+maxLifetime.....................1800000
+maximumPoolSize.................10
+metricRegistry..................none
+metricsTrackerFactory...........none
+minimumIdle.....................2
+password........................<masked>
+poolName........................"HikariPool-1"
+readOnly........................false
+registerMbeans..................false
+scheduledExecutor...............none
+schema..........................none
+threadFactory...................internal
+transactionIsolation............default
+username........................"root"
+validationTimeout...............5000
+HikariPool-1 - Starting...
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25d0cb3a
+HikariPool-1 - Start completed.
+HikariPool-1 - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+HikariPool-1 - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@244c529
+HikariPool-1 - After adding stats (total=2, active=0, idle=2, waiting=0)
+==>  Preparing: delete from reply where rno = ?
+==> Parameters: 9(Long)
+<==    Updates: 0
+0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

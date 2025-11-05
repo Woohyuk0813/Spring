@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        body { margin: 15px;
+        }
+
+        .input-title {
+            width: 200px;
+            padding: 4px;
+            margin-bottom: 2px;
+            border: 1px solid gray;
+            font-size: 12px;
+            box-sizing: border-box;
+        }
+
+        .date-container {
+            display: flex;
+            align-items: center;
+            width: 200px;
+            border: 1px solid gray;
+            margin-bottom: 2px;
+            position: relative;
+            box-sizing: border-box;
+            padding: 1px;
+        }
+
+        .date-display-text {
+            flex-grow: 1;
+            padding: 3px;
+            color: #666;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .calendar-icon-btn {
+            padding: 3px 5px;
+            font-size: 11px;
+            color: #666;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hidden-date-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 3px 19px;
+            margin-right: 10px;
+            border: 1px solid #999;
+            background-color: #eee;
+            cursor: pointer;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+<form onsubmit="return false;">
+    <input type="text" class="input-title" placeholder="INSERT TITLE">
+
+    <div class="date-container">
+        <div id="date-text-display" class="date-display-text" onclick="showDateSelector()">년-월-일</div>
+
+        <button type="button" class="calendar-icon-btn" onclick="showDateSelector()">&#x1f4c5;</button>
+
+        <input type="date" id="real-date-input" class="hidden-date-input" onchange="updateDateDisplay(this.value)">
+    </div>
+
+    <div>
+        <button type="reset">RESET</button>
+        <button type="submit">REGISTER</button>
+    </div>
+</form>
+
+<script>
+    function showDateSelector() {
+        const dateInput = document.getElementById('real-date-input');
+        if (dateInput.showPicker) {
+            dateInput.showPicker();
+        } else {
+            dateInput.focus();
+            dateInput.click();
+        }
+    }
+
+    function updateDateDisplay(dateString) {
+        const displayElement = document.getElementById('date-text-display');
+        if (dateString) {
+            displayElement.textContent = dateString;
+            displayElement.style.color = '#000';
+        } else {
+            displayElement.textContent = '년-월-일';
+            displayElement.style.color = '#666';
+        }
+    }
+</script>
+
+</body>
+</html>
